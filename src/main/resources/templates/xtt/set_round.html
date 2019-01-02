@@ -1,0 +1,111 @@
+<!--轮次设置-->
+<!DOCTYPE html>
+<html lang="ch">
+<head style="font-size:35px">
+    <meta name="viewport"
+          content="width=device-width,user-scale=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
+          charset="GB2312">
+    <link rel="stylesheet" href="seminar.css" charset="GB2312"/>
+    <title>轮次设置</title>
+
+</head>
+<body>
+
+
+<center>
+    <div id="header1">
+        <span><</span>
+        <!---->
+        第一轮
+    </div>
+    <div class="div2">
+        <p class="p2">讨论课：</p>
+        <table class="table_d2" cellspacing="" cellpadding="">
+            <tr>
+                <td class="c">业务流程分析</td>
+            </tr>
+            <tr>
+                <td class="c">领域模型设计</td>
+            </tr>
+        </table>
+        </br>
+    </div>
+    <div class="div2">
+        <p class="p2">成绩设置:</p>
+        <!---->
+        <table class="table_d2" cellspacing="" cellpadding="">
+            <tr>
+                <td class="c">展示：</td>
+                <td class="c">
+                    <select id="pre">
+                        <option value="0">最高分</option>
+                        <option value="1">平均分</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="c">提问：</td>
+                <td class="c">
+                    <select id="que">
+                        <option value="0">最高分</option>
+                        <option value="1">平均分</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="c">报告：</td>
+                <td class="c">
+                    <select id="rep">
+                        <option value="0">最高分</option>
+                        <option value="1">平均分</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="div2">
+        <p class="p2">本轮讨论课报名次数:</p>
+        <table class="table_d2" cellspacing="" cellpadding="">
+            <tr>
+                <!---->
+                <td class="c">一班：</td>
+                <td class="c"><select id="select1"></select> </td>
+            </tr>
+            <tr>
+                <td class="c">二班：</td>
+                <td class="c">
+                    <form action="" method="get">
+                        <select name="">
+                            <option value="1">1(默认)</option>
+                            <option value="2">2</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="c">三班</td>
+                <td class="c">
+                    <form action="" method="get">
+                        <select name="">
+                            <option value="1">1(默认)</option>
+                            <option value="2">2</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </br>
+    <button class="button3">修改</button>
+</center>
+<script type="text/javascript">
+    var objSelectNow=document.getElementById("select1");
+    var inner="<option value='1'>1(默认)</option>";
+    objSelectNow.innerHTML=inner;
+    var objOption = document.createElement("OPTION");
+    objOption.text= 2;
+    objOption.value=2;
+    objSelectNow.options.add(objOption);
+</script>
+</body>
+</html>

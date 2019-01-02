@@ -1,0 +1,118 @@
+<!--结束-->
+<!DOCTYPE html>
+<html lang="ch">
+<head style="font-size:35px">
+    <link href="ftl/seminar.css" type="text/css" rel="stylesheet" charset="GB2312"/>
+
+    <meta name="viewport"
+          content="width=device-width,user-scale=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
+          charset="GB2312">
+
+    <title>结束</title>
+</head>
+<body class="body1">
+<center>
+    <!--头都用这一个，不要改了-->
+    <div id="header1">
+        <center>
+	            <span>
+	                <b><</b>
+	            </span>
+            OOAD-讨论课
+            <span1>
+                <b><li class="dao li1">+
+                    <ul class="sub sub1">
+                        <li class="main">代办</li>
+                        <li class="main">个人页</li>
+                        <li class="main">讨论课</li>
+                    </ul>
+                </li>
+                </b>
+            </span1>
+        </center>
+    </div>
+    <div class="header1">
+        <!---->
+        <center>
+            业务流程分析
+        </center>
+    </div>
+    </br>
+    <u_r>已有1位同学提问</u_r>
+    </br>
+    <div class="middle">
+        <!---->
+        <table class="table_m" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="c1">1-5</td>
+            </tr>
+            <tr>
+                <td class="c1">1-5</td>
+            </tr>
+            <tr>
+                <td class="c2">1-5</td>
+            </tr>
+            <tr>
+                <td class="c1">1-5</td>
+            </tr>
+            <tr>
+                <td class="c1">1-5</td>
+            </tr>
+            <tr>
+                <td class="c1">1-5</td>
+            </tr>
+        </table>
+    </div>
+    <div class="middle1">
+        <u2>提问分数</u2></br>
+        <input class="div1" type="text" name="presentation_score" value="5" onfocus="this.value='';this.onfocus='';"/><br/>
+    </div>
+    <div class="middle2">
+        <table class="table_m2">
+            <tr><td class="c1">1-5 小妖精</td> </tr>
+            <tr><td class="c2">1-5 小妖精</td> </tr>
+        </table>
+    </div>
+    <div>
+        <button class="button7">确认打分</button>
+        </br>
+        <button class="button3">下个提问</button>
+        </br>
+        <a href="#target_1"><button class="button4" onclick="a();">下组展示</button></a>
+        </br>
+    </div>
+    <div id="target_1" class="fade" style="display: none">
+        <div class="popupWindow" id="popup" style="display: none">
+            <p>讨论课已结束</p>
+            <p>请设定书面报告截至时间</p>
+            <p class="p1"><input type="datetime-local" id="reportRollTime"/></p>
+            <div class="but">
+                <a href="#">SURE</a>
+            </div>
+        </div>
+    </div>
+    <!--<div id="target_1" class="fade">-->
+        <!--<div class="popupWindow" id="popup">-->
+            <!--</br>-->
+            <!--<p>讨论课已结束</p>-->
+            <!--<p>请设定书面报告截至时间</p>-->
+            <!--<p class="p1"><input type="datetime-local" id="reportRollTime"/></p>-->
+            <!--</br>-->
+            <!--<div class="but" id="but">-->
+                <!--<a href="#">SURE</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</center>
+<script type="text/javascript">
+    function a() {
+        var wai=document.getElementById("target_1");
+        var nei=document.getElementById("popup");
+        // var zh=document.getElementById("but");
+        wai.style.display="block";
+        nei.style.display="block";
+        // zh.style.display="block";
+    }
+</script>
+</body>
+</html>
